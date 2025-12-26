@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Slideshow images */
+.hero-slideshow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hero-slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 1.5s ease-in-out, transform 6s ease-in-out;
+}
+
+
+.hero-slideshow img.active {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Center text */
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+    opacity: 0;
+    animation: fadeUp 1.4s ease forwards;
+}
+
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+    opacity: 0.85;
+}
+
+
+
+/* Logo */
+.hero-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}@media (max-width: 768px) {
+
+    .hero-logo {
+        width: 85px;
+        margin-bottom: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -35%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    padding: 10px 22px;
+    border: 1px solid rgba(255,255,255,0.7);
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: white;
+    color: black;
+}
+.hero-btn {
+    font-size: 0.85rem;
+    padding: 9px 18px;
+}
