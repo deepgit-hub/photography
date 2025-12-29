@@ -128,7 +128,9 @@
     transition: all 0.3s ease;
 }
 .hero-btn:hover {
-    background: grey;
-    color: white;
+    background: #8e8e8e;   /* solid grey */
+    color: white;          /* white text */
+    border-color: #8e8e8e;
 }
+
 
