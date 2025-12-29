@@ -127,13 +127,8 @@
     border-radius: 30px;
     transition: all 0.3s ease;
 }
-
-
 .hero-btn:hover {
     background: white;
     color: black;
 }
-.hero-btn {
-    font-size: 0.85rem;
-    padding: 9px 18px;
-}
+
