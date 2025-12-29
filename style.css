@@ -54,6 +54,9 @@
     text-align: center;
     color: white;
     z-index: 2;
+    max-width: 90%;
+    width: max-content;
+
 }
 
 
@@ -64,6 +67,8 @@
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.2;
+    white-space: nowrap;
+
 }
 
 .hero-content p {
@@ -81,7 +86,8 @@
 .hero-logo {
     width: 120px;
     margin-bottom: 20px;
-}@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
 
     .hero-logo {
         width: 85px;
@@ -90,13 +96,16 @@
 
     .hero-content h1 {
         font-size: 2.2rem;
+        white-space: normal;   
+        text-align: center;
     }
 
     .hero-content p {
         font-size: 0.95rem;
     }
-
 }
+
+
 
 @keyframes fadeUp {
     from {
