@@ -1,3 +1,7 @@
+.hero-nav a {
+    color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -125,22 +129,6 @@
     flex-wrap: wrap;
 }
 
-.hero-btn {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.85rem;
-    padding: 9px 18px;
-    color: white;
-    background: rgba(120,120,120,0.35);
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(2px);
-}
-.hero-btn:hover {
-    background: #8e8e8e;   /* solid grey */
-    color: black;          /* white text */
-    border-color: #8e8e8e;
-}
 .hero-nav {
     position: absolute;
     top: 25px;
@@ -152,6 +140,34 @@
     align-items: center;
     z-index: 3;
 }
+.nav-left a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 7px 16px;
+    margin-right: 14px;
+    border-radius: 22px;
+    color: white;
+    background: rgba(120,120,120,0.35);
+    transition: all 0.3s ease;
+}
+
+.nav-left a:hover {
+    background: #8e8e8e;
+    color: white;
+}
+.nav-right a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-left: 20px;
+    color: white;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.nav-right a:hover {
+    opacity: 1;
+}
+
 
 
 
