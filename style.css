@@ -138,7 +138,7 @@
 }
 .hero-btn:hover {
     background: #8e8e8e;   /* solid grey */
-    color: white;          /* white text */
+    color: black;          /* white text */
     border-color: #8e8e8e;
 }
 
