@@ -240,7 +240,7 @@
     right: 60px;
     display: flex;
     gap: 18px;
-    z-index: 3;
+    z-index: 5;
 }
 
 .hero-arrow {
