@@ -365,60 +365,49 @@
         font-size: 1.8rem;
     }
 }
-/* ===== LIGHTBOX ===== */
+/* ===== LIGHTBOX (FIXED) ===== */
 .lightbox {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
     background: rgba(0, 0, 0, 0.95);
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 9999;
+
+    z-index: 99999;
 }
 
 .lightbox.active {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
 
 .lightbox-img {
-    max-width: 92%;
-    max-height: 92%;
+    max-width: 92vw;
+    max-height: 92vh;
     object-fit: contain;
-    animation: zoomIn 0.35s ease;
 }
 
 .lightbox-close {
-    position: absolute;
-    top: 24px;
+    position: fixed;
+    top: 22px;
     right: 28px;
     font-size: 34px;
     color: white;
     cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+    opacity: 0.75;
 }
 
 .lightbox-close:hover {
     opacity: 1;
 }
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.92);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-
-
-
-
-
