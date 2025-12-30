@@ -418,11 +418,17 @@
     transform: translateY(-50%);
     font-size: 36px;
     color: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
+
     user-select: none;
+    cursor: pointer;
+
     z-index: 100000;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    pointer-events: none; 
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
+
 
 .lightbox-arrow:hover {
     opacity: 1;
@@ -434,6 +440,9 @@
 
 .lightbox-arrow.right {
     right: 24px;
+}
+.lightbox.active .lightbox-arrow {
+    pointer-events: auto;
 }
 
 /* Hide arrows on very small screens (swipe later if needed) */
